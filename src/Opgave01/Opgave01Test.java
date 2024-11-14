@@ -19,6 +19,12 @@ public class Opgave01Test {
     }
 
     public static boolean containsUnevenNumber(int[] candidates) {
+        for (int candidate : candidates) {
+            if (candidate % 2 == 1){
+                return true;
+            }
+        }
+
         return false;
     }
 }

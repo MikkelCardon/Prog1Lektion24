@@ -15,7 +15,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 public class SpellsStorage {
-    private ArrayList<Spell> spells;
+    private static ArrayList<Spell> spells;
 
     public SpellsStorage() {
         Gson gson = new GsonBuilder().create();
@@ -32,7 +32,7 @@ public class SpellsStorage {
         }
     }
 
-    public ArrayList<Spell> getSpells() {
+    public static ArrayList<Spell> getSpells() {
         return spells;
     }
 }
